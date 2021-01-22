@@ -15,8 +15,7 @@ export_file_path = Path(__file__).parent / 'models'
 
 classes =["checked_pattern_shirts","panda_tshirt","dotted_pattern_pants","striped_pattern_pants",
 "dotted_pattern_shirts","superman_tshirt","floral_patter","verticalstrip_patter_shirts",
-"horizontalstrip_patter_shirts"]
-app = Starlette()
+"horizontalstrip_patter_shirts"]app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
 app.mount('/static', StaticFiles(directory='app/static'))
 
