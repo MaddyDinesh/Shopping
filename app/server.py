@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1qGyr9AEj71iLITNpjBaKqY7DYJ2xrVfm
+export_file_url = 'https://drive.google.com/uc?export=download&id=1qGyr9AEj71iLITNpjBaKqY7DYJ2xrVfm'
 export_file_name = 'trained_model.pkl'
 export_file_path = Path(__file__).parent / 'models'
 
